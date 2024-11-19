@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "deno",
+			"command": "task",
+			"args": [
+				"esm:add"
+			],
+			"problemMatcher": [
+				"$deno"
+			],
+			"label": "deno: esm:add",
+			"detail": "$ deno run -A https://esm.sh/v135 add"
+		}
+	]
+}

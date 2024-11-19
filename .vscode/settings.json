@@ -14,7 +14,15 @@
   "[javascript]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
-  "css.customData": [
-    ".vscode/tailwind.json"
-  ]
+  "editor.fontFamily": "'JetBrainsMono Nerd Font'",
+  "editor.fontLigatures": true,
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.enableVisualBell": true,
+  "terminal.integrated.gpuAcceleration": "off",
+  "tailwindCSS.emmetCompletions": true,
+  
+  "tailwindcss-intellisense.trace.server": "messages",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }

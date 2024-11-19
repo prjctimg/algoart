@@ -7,7 +7,10 @@
     "start": "deno run -A --watch=static/,routes/ dev.ts",
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
-    "update": "deno run -A -r https://fresh.deno.dev/update ."
+    "update": "deno run -A -r https://fresh.deno.dev/update .",
+    "esm:add": "deno run -A https://esm.sh/v135 add",
+    "esm:update": "deno run -A https://esm.sh/v135 update",
+    "esm:remove": "deno run -A https://esm.sh/v135 remove"
   },
   "lint": {
     "rules": {
@@ -21,20 +24,38 @@
     "**/_fresh/*"
   ],
   "imports": {
-
+    "$std/": "https://deno.land/std@0.216.0/",
     "$fresh/": "https://deno.land/x/fresh@1.7.3/",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
+    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
+    "daisyui": "https://esm.sh/daisyui@4.12.14",
     "preact": "https://esm.sh/preact@10.22.0",
     "preact/": "https://esm.sh/preact@10.22.0/",
-    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
-    "tailwindcss": "npm:tailwindcss@3.4.1",
-    "tailwindcss/": "npm:/tailwindcss@3.4.1/",
-    "tailwindcss/plugin": "npm:/tailwindcss@3.4.1/plugin.js",
-    "$std/": "https://deno.land/std@0.216.0/"
+    "autoprefixer": "https://esm.sh/v135/*autoprefixer@10.4.20",
+    "postcss-color-function": "https://esm.sh/v135/*postcss-color-function@4.1.0",
+    "postcss": "https://esm.sh/v135/*postcss@8.4.49",
+    "postcss/": "https://esm.sh/v135/*postcss@8.4.49/",
+    "tailwindcss": "npm:/tailwindcss@3.4.1/",
+    "tailwindcss/plugin": "npm:/tailwindcss@3.4.1/plugin.js"
   },
   "compilerOptions": {
+    
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
   },
-  "nodeModulesDir": "none"
+  "nodeModulesDir": "none",
+  "scopes": {
+    "https://esm.sh/v135/": {
+      "browserslist": "https://esm.sh/v135/browserslist@4.24.2",
+      "caniuse-lite": "https://esm.sh/v135/caniuse-lite@1.0.30001680",
+      "css-color-function": "https://esm.sh/v135/css-color-function@1.3.3",
+      "fraction.js": "https://esm.sh/v135/fraction.js@4.3.7",
+      "nanoid": "https://esm.sh/v135/nanoid@3.3.7",
+      "normalize-range": "https://esm.sh/v135/normalize-range@0.1.2",
+      "picocolors": "https://esm.sh/v135/picocolors@1.1.1",
+      "postcss-message-helpers": "https://esm.sh/v135/postcss-message-helpers@2.0.0",
+      "postcss-value-parser": "https://esm.sh/v135/postcss-value-parser@3.3.1",
+      "source-map-js": "https://esm.sh/v135/source-map-js@1.2.1"
+    }
+  }
 }

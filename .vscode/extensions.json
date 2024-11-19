@@ -1,6 +1,14 @@
 {
   "recommendations": [
     "denoland.vscode-deno",
-    "bradlc.vscode-tailwindcss"
+    "bradlc.vscode-tailwindcss",
+    "github.vscode-pull-request-github",
+    "catppuccin.catppuccin-vsc",
+    "catppuccin.catppuccin-vsc-icons",
+    "stivo.tailwind-fold",
+    "raymcclain.theme-timer",
+    "n3rds-inc.white-noise",
+    "biomejs.biome",
+    "1ab4a0b1-cc41-64f7-ad52-d7481170d3ae.preact-snippets"
   ]
 }
