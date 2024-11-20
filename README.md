@@ -1,16 +1,7 @@
-# Fresh project
+## 🚧 Work in Progress
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+algoart is a knowledge base for creating algorithmic art using web technologies.
 
-### Usage
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
 
-Then start the project:
-
-```
-deno task start
-```
-
-This will watch the project directory and restart as necessary.
+> Readme will be updated along the way
